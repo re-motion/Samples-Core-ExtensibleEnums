@@ -20,9 +20,11 @@
 using System.Reflection;
 using BaseColors;
 using Remotion.ExtensibleEnums;
+using Remotion.Globalization;
 
 namespace OtherColors
 {
+  [MultiLingualResources ("OtherColors.Resources.ColorExtensions")]
   public static class ColorExtensions
   {
     public static Color LightRed (this ExtensibleEnumDefinition<Color> definition)
@@ -38,21 +40,6 @@ namespace OtherColors
     public static Color LightBlue (this ExtensibleEnumDefinition<Color> definition)
     {
       return new Color (MethodBase.GetCurrentMethod ());
-    }
-
-    public static MetallicColor LightRedMetallic (this ExtensibleEnumDefinition<Color> definition)
-    {
-      return new MetallicColor (MethodBase.GetCurrentMethod ());
-    }
-
-    public static MetallicColor LightGreenMetallic (this ExtensibleEnumDefinition<Color> definition)
-    {
-      return new MetallicColor (MethodBase.GetCurrentMethod ());
-    }
-
-    public static MetallicColor LightBlueMetallic (this ExtensibleEnumDefinition<Color> definition)
-    {
-      return new MetallicColor (MethodBase.GetCurrentMethod ());
     }
 
     public static GoldenColor GoldenRed (this ExtensibleEnumDefinition<Color> definition)

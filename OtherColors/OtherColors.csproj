@@ -52,12 +52,24 @@
     <Compile Include="ColorExtensions.cs" />
     <Compile Include="GoldenColor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\ColorExtensions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ColorExtensions.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BaseColors\BaseColors.csproj">
       <Project>{6BF85806-F202-47B9-B126-A31AEFFD33BB}</Project>
       <Name>BaseColors</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ColorExtensions.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ColorExtensions.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

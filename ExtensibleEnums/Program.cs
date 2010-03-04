@@ -37,7 +37,14 @@ namespace ExtensibleEnums
       var valueInfos = Color.Values.GetValueInfos();
       Console.WriteLine ("Total: {0} colors", valueInfos.Count);
       foreach (var valueInfo in valueInfos)
-        Console.WriteLine ("Color: {0,-46} Name={1,-18} DeclarationSpace={2}", valueInfo.Value.ID, valueInfo.Value.ValueName, valueInfo.Value.DeclarationSpace);
+      {
+        Console.WriteLine (
+            "{0,-40} Name={1,-15} DeclarationSpace={2,-27} DisplayName={3}",
+            valueInfo.Value.ID,
+            valueInfo.Value.ValueName,
+            valueInfo.Value.DeclarationSpace,
+            valueInfo.Value.GetLocalizedName());
+      }
       Console.WriteLine ();
 
       TestPolymorphicOperation (Color.Values.Blue ());

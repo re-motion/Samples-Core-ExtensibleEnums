@@ -19,9 +19,11 @@
 // THE SOFTWARE.
 using System.Reflection;
 using Remotion.ExtensibleEnums;
+using Remotion.Globalization;
 
 namespace BaseColors
 {
+  [MultiLingualResources ("BaseColors.Resources.ColorExtensions")]
   public static class ColorExtensions
   {
     public static Color Red (this ExtensibleEnumDefinition<Color> definition)
