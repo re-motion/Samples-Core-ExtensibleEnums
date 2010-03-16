@@ -27,31 +27,37 @@ namespace OtherColors
   [MultiLingualResources ("OtherColors.Resources.ColorExtensions")]
   public static class ColorExtensions
   {
+    [ExtensibleEnumPosition (1.25)]
     public static Color LightRed (this ExtensibleEnumDefinition<Color> definition)
     {
       return new Color (MethodBase.GetCurrentMethod ());
     }
 
+    [ExtensibleEnumPosition (2.25)]
     public static Color LightGreen (this ExtensibleEnumDefinition<Color> definition)
     {
       return new Color (MethodBase.GetCurrentMethod ());
     }
 
+    [ExtensibleEnumPosition (3.25)]
     public static Color LightBlue (this ExtensibleEnumDefinition<Color> definition)
     {
       return new Color (MethodBase.GetCurrentMethod ());
     }
 
+    [ExtensibleEnumPosition (1.75)]
     public static GoldenColor GoldenRed (this ExtensibleEnumDefinition<Color> definition)
     {
       return new GoldenColor (MethodBase.GetCurrentMethod ());
     }
 
+    [ExtensibleEnumPosition (2.75)]
     public static GoldenColor GoldenGreen (this ExtensibleEnumDefinition<Color> definition)
     {
       return new GoldenColor (MethodBase.GetCurrentMethod ());
     }
 
+    [ExtensibleEnumPosition (3.75)]
     public static GoldenColor GoldenBlue (this ExtensibleEnumDefinition<Color> definition)
     {
       return new GoldenColor (MethodBase.GetCurrentMethod ());

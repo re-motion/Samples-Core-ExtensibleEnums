@@ -29,9 +29,16 @@ namespace ExtensibleEnums
     {
       var blue = Color.Values.Blue ();
       var blueMetallic = Color.Values.BlueMetallic ();
-      Console.WriteLine ("blue == Color.Values.Blue: {0}", blue == Color.Values.Blue ());
-      Console.WriteLine ("blueMetallic == Color.Values.Blue: {0}", blueMetallic == Color.Values.Blue ());
-      Console.WriteLine ("blueMetallic == Color.Values.BlueMetallic: {0}", blueMetallic == Color.Values.BlueMetallic ());
+      var goldenBlue = Color.Values.GoldenBlue ();
+
+      Console.WriteLine ("blue == Color.Values.Blue: {0}", blue == Color.Values.Blue ()); // False
+      Console.WriteLine ("blue.Equals (Color.Values.Blue): {0}", blue.Equals (Color.Values.Blue ())); // True
+
+      Console.WriteLine (blue.IsShiny());
+
+      Console.WriteLine ("blueMetallic.Equals (Color.Values.Blue): {0}", blueMetallic.Equals (Color.Values.Blue ()));
+      Console.WriteLine ("blueMetallic.Equals (Color.Values.BlueMetallic): {0}", blueMetallic.Equals (Color.Values.BlueMetallic ()));
+      Console.WriteLine ("goldenBlue.Equals (goldenBlue): {0}", goldenBlue.Equals (goldenBlue));
       Console.WriteLine ();
 
       var valueInfos = Color.Values.GetValueInfos();

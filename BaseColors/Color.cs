@@ -34,6 +34,7 @@ namespace BaseColors
       return false;
     }
 
+
     public virtual void PolymorphicOperation ()
     {
       Console.WriteLine ("I'm a color, dull and base; please don't punch me in my face: {0}", ID);

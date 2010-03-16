@@ -26,31 +26,37 @@ namespace BaseColors
   [MultiLingualResources ("BaseColors.Resources.ColorExtensions")]
   public static class ColorExtensions
   {
+    [ExtensibleEnumPosition(1.0)]
     public static Color Red (this ExtensibleEnumDefinition<Color> definition)
     {
       return new Color (MethodBase.GetCurrentMethod ());
     }
 
+    [ExtensibleEnumPosition (2.0)]
     public static Color Green (this ExtensibleEnumDefinition<Color> definition)
     {
       return new Color (MethodBase.GetCurrentMethod ());
     }
 
+    [ExtensibleEnumPosition (3.0)]
     public static Color Blue (this ExtensibleEnumDefinition<Color> definition)
     {
       return new Color (MethodBase.GetCurrentMethod ());
     }
 
+    [ExtensibleEnumPosition (1.5)]
     public static MetallicColor RedMetallic (this ExtensibleEnumDefinition<Color> definition)
     {
       return new MetallicColor (MethodBase.GetCurrentMethod ());
     }
 
+    [ExtensibleEnumPosition (2.5)]
     public static MetallicColor GreenMetallic (this ExtensibleEnumDefinition<Color> definition)
     {
       return new MetallicColor (MethodBase.GetCurrentMethod ());
     }
 
+    [ExtensibleEnumPosition (3.5)]
     public static MetallicColor BlueMetallic (this ExtensibleEnumDefinition<Color> definition)
     {
       return new MetallicColor (MethodBase.GetCurrentMethod ());
